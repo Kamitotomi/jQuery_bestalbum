@@ -77,3 +77,46 @@ function add(num1, num2) {
 console.log(added1);
 console.log(added2);
 console.log(added3);
+
+// javascriptのswitch文
+
+var a = 100;
+var b = 200;
+var c;
+
+// switch (200){
+	// case a:
+
+		// c = a;
+// 		break;
+// 	case b:
+// 		c = b;
+// 		break;
+// 	default:
+// 		c = 300;
+// 		break;
+// }
+
+// console.log(b);
+
+var array = [1, 2, 3, 4, 5, 6]
+var num = 0
+
+// for (var i = 0, len = array.length; i < len; i++) {
+// 	num += array[i];
+// }
+
+// console.log(num);
+
+// 5の倍数なら終了、偶数なら継続
+
+for (var i = 0; i < array.length; i++) {
+	var number = array[i];
+
+	if (number % 5 === 0) {
+		break;
+	}else if (number % 2 === 1) {
+		continue;
+	}
+	console.log(num += number);
+}
