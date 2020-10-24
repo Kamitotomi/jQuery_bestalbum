@@ -34,4 +34,17 @@ $(function () {
                     color: '#ebc000'
                 }, duration, 'easeOutSine');
             });
+
+        $('#buttons1 button:nth-child(n+9)')
+            .on('mouseenter', function(){
+                $(this).find('> span').stop(true).animate({
+                    width: '100%'
+                }, duration, 'easeOutQuad');
+            })
+
+            .on('mouseleave', function(){
+                $(this).find('> span').stop(true).animate({
+                    width: '0%'
+                }, duration, 'easeOutQuad');
+            });
 });
